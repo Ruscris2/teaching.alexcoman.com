@@ -1,0 +1,244 @@
+- date: "2017-04-24"
+  date_readable: "Luni, 24 aprilie"
+  tracks:
+    - {title: "C405", color: "#90be4e"}
+  timeslots:
+    - start_time: "08:00"
+      end_time: "08:10"
+      session_ids: [41]
+
+    - start_time: "08:10"
+      end_time: "08:20"
+      session_ids: [41]
+
+    - start_time: "08:20"
+      end_time: "08:30"
+      session_ids: [41]
+
+    - start_time: "08:30"
+      end_time: "08:40"
+      session_ids: [41]
+
+    - start_time: "08:40"
+      end_time: "08:50"
+      session_ids: [41]
+
+    - start_time: "08:50"
+      end_time: "09:00"
+      session_ids: [41]
+
+    - start_time: "09:00"
+      end_time: "09:10"
+      session_ids: [41]
+
+    - start_time: "09:10"
+      end_time: "09:20"
+      session_ids: [41]
+
+    - start_time: "09:20"
+      end_time: "09:30"
+      session_ids: [41]
+
+    - start_time: "09:30"
+      end_time: "09:40"
+      session_ids: [41]
+
+    - start_time: "09:40"
+      end_time: "09:50"
+      session_ids: [41]
+
+- date: "2017-04-25"
+  date_readable: "Marți, 25 aprilie"
+  tracks:
+    - {title: "C403", color: "#90be4e"}
+  timeslots:
+    - start_time: "08:00"
+      end_time: "08:10"
+      session_ids: [41]
+
+    - start_time: "08:10"
+      end_time: "08:20"
+      session_ids: [41]
+
+    - start_time: "08:20"
+      end_time: "08:30"
+      session_ids: [41]
+
+    - start_time: "08:30"
+      end_time: "08:40"
+      session_ids: [41]
+
+    - start_time: "08:40"
+      end_time: "08:50"
+      session_ids: [41]
+
+    - start_time: "08:50"
+      end_time: "09:00"
+      session_ids: [41]
+
+    - start_time: "09:00"
+      end_time: "09:10"
+      session_ids: [41]
+
+    - start_time: "09:10"
+      end_time: "09:20"
+      session_ids: [41]
+
+    - start_time: "09:20"
+      end_time: "09:30"
+      session_ids: [41]
+
+    - start_time: "09:30"
+      end_time: "09:40"
+      session_ids: [41]
+
+    - start_time: "09:40"
+      end_time: "09:50"
+      session_ids: [41]
+
+- date: "2017-04-27"
+  date_readable: "Joi, 27 aprilie"
+  tracks:
+    - {title: "C409", color: "#90be4e"}
+  timeslots:
+    - start_time: "08:00"
+      end_time: "08:10"
+      session_ids: [41]
+
+    - start_time: "08:10"
+      end_time: "08:20"
+      session_ids: [41]
+
+    - start_time: "08:20"
+      end_time: "08:30"
+      session_ids: [41]
+
+    - start_time: "08:30"
+      end_time: "08:40"
+      session_ids: [41]
+
+    - start_time: "08:40"
+      end_time: "08:50"
+      session_ids: [41]
+
+    - start_time: "08:50"
+      end_time: "09:00"
+      session_ids: [41]
+
+    - start_time: "09:00"
+      end_time: "09:10"
+      session_ids: [41]
+
+    - start_time: "09:10"
+      end_time: "09:20"
+      session_ids: [41]
+
+    - start_time: "09:20"
+      end_time: "09:30"
+      session_ids: [41]
+
+    - start_time: "09:30"
+      end_time: "09:40"
+      session_ids: [41]
+
+    - start_time: "09:40"
+      end_time: "09:50"
+      session_ids: [41]
+
+- date: "2017-04-28"
+  date_readable: "Vineri, 28 aprilie"
+  tracks:
+    - {title: "C409", color: "#90be4e"}
+  timeslots:
+    - start_time: "08:00"
+      end_time: "08:10"
+      session_ids: [41]
+
+    - start_time: "08:10"
+      end_time: "08:20"
+      session_ids: [41]
+
+    - start_time: "08:20"
+      end_time: "08:30"
+      session_ids: [41]
+
+    - start_time: "08:30"
+      end_time: "08:40"
+      session_ids: [41]
+
+    - start_time: "08:40"
+      end_time: "08:50"
+      session_ids: [41]
+
+    - start_time: "08:50"
+      end_time: "09:00"
+      session_ids: [41]
+
+    - start_time: "09:00"
+      end_time: "09:10"
+      session_ids: [41]
+
+    - start_time: "09:10"
+      end_time: "09:20"
+      session_ids: [41]
+
+    - start_time: "09:20"
+      end_time: "09:30"
+      session_ids: [41]
+
+    - start_time: "09:30"
+      end_time: "09:40"
+      session_ids: [41]
+
+    - start_time: "09:40"
+      end_time: "09:50"
+      session_ids: [41]
+
+- date: "2017-04-29"
+  date_readable: "Sâmbătă, 29 aprilie"
+  tracks:
+    - {title: "C210", color: "#03a9f4"}
+  timeslots:
+    - start_time: "08:00"
+      end_time: "08:10"
+      session_ids: [41]
+
+    - start_time: "08:10"
+      end_time: "08:20"
+      session_ids: [41]
+
+    - start_time: "08:20"
+      end_time: "08:30"
+      session_ids: [41]
+
+    - start_time: "08:30"
+      end_time: "08:40"
+      session_ids: [41]
+
+    - start_time: "08:40"
+      end_time: "08:50"
+      session_ids: [41]
+
+    - start_time: "08:50"
+      end_time: "09:00"
+      session_ids: [41]
+
+    - start_time: "09:00"
+      end_time: "09:10"
+      session_ids: [41]
+
+    - start_time: "09:10"
+      end_time: "09:20"
+      session_ids: [41]
+
+    - start_time: "09:20"
+      end_time: "09:30"
+      session_ids: [41]
+
+    - start_time: "09:30"
+      end_time: "09:40"
+      session_ids: [41]
+
+    - start_time: "09:40"
+      end_time: "09:50"
+      session_ids: [41]

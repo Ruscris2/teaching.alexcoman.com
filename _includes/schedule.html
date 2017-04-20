@@ -1,0 +1,81 @@
+{% assign projects = site.data.[page.data].projects %}
+{% assign schedule = site.data.[page.data].schedule %}
+{% assign teams = site.data.[page.data].teams %}
+
+<section id="schedule" class="schedule container">
+  <div class="content-wrapper">
+    {% for day in schedule %}
+    <div class="schedule-table col-md-10 col-md-offset-1">
+      <h4 class="schedule-table-heading">{{ day.date_readable }}</h4>
+      <div class="timeslot track-header stick-header">
+        <div class="track-header-label"># {{ forloop.index }}</div>
+        <div class="timeslot-elements flexbox-wrapper">
+          {% for track in day.tracks %}
+            {% assign track_width = 12 | divided_by: forloop.length %}
+            <div class="track-header-slot col-md-{{ track_width }} flexbox-item-height hidden-xs">
+              <h5 class="track-header-title">{{ track.title }}</h5>
+            </div>
+          {% endfor %}
+          <div class="track-header-slot col-xs-12 visible-xs">
+            <h5 class="slot-detail track-header-title"></h5>
+          </div>
+        </div>
+      </div>
+      {% for timeslot in day.timeslots %}
+        {% assign start_time = timeslot.start_time | split: ":" %}
+        {% assign end_time = timeslot.end_time | split: ":" %}
+        <div class="timeslot" itemtype="http://schema.org/subEvent">
+          <div class="timeslot-label">
+            <time class="start-time" itemprop="startDate"
+                  datetime="{{ day.date_readable }}T{{ timeslot.start_time }}">
+              {{ start_time[0] }}<span>{{ start_time[1] }}</span>
+            </time>
+            <time class="end-time" itemprop="endDate"
+                  datetime="{{ day.date_readable }}T{{ timeslot.end_time }}">
+              {{ end_time[0] }}<span>{{ end_time[1] }}</span>
+            </time>
+          </div>
+          <div class="timeslot-elements flexbox-wrapper">
+          {% for slot in timeslot.session_ids %}
+            {% assign slot_width = 12 | divided_by: forloop.length %}
+            {% assign slot_index = forloop.index0 %}
+            {% if slot == 404 %}
+              <div class="slot col-md-{{ slot_width }} hidden-xs blank-col flexbox-item-height"></div>
+            {% else %}
+              {% for team in teams %}
+              {% if slot == team.team_id%}
+                {% for project in projects %}
+                  {% if team.project_id == project.id %}
+                    {% assign current_project = project %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                <div id="team-{{ team.team_id }}"
+                     class="slot col-md-{{ slot_width }} col-xs-12 flexbox-item-height"
+                     data-slot-detail="{{ day.tracks[slot_index].title }}">
+                  <div class="color-line" style="background: {{ day.tracks[slot_index].color }}"></div>
+                  <div class="slot-content" style="border-right-color: {{ day.tracks[slot_index].color }}">
+                    <h5 class="slot-title" itemprop="name">{{ current_project.title }}</h5>
+                    <span class="slot-language">Clasă de dificultate: {{ current_project.class | upcase }}</span>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <span class="leader">{{ team.owner }}</span>
+                    </div>
+                    {% for member in team.members %}
+                      {% assign slot_width = 12 | divided_by: forloop.length %}
+                    <div class="col-sm-{{ slot_width }} col-xs-12">
+                      <span class="member">{{ member }}</span>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
